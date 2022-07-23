@@ -19,6 +19,7 @@ function fight_three(details) {
     location.href = `fight.html`
 }
 
+
 let pokemon_chikorita = 
 
     {
@@ -60,3 +61,7 @@ cyndaquil_click.addEventListener(`click`, fight_two)
 let totodile_click = document.getElementById(`totadile_button`);
 totodile_click.addEventListener(`click`, fight_three)
 
+
+let comp_cyndaquil_json = JSON.stringify(pokemon_cyndaquil)
+Cookies.set(`comp_Pokemon`,comp_cyndaquil_json )
+Cookies.set(`comp_health`,`${pokemon_cyndaquil[`health`]}` )
