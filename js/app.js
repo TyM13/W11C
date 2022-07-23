@@ -30,3 +30,37 @@ function fight_three (details) {
 
 let totadile = document.getElementById(`totadile_button`);
 totadile.addEventListener(`click`, fight_three)
+
+
+
+
+
+
+let pokemon_selection =[
+
+{
+    name: `Chikorita`,
+    image_url: `/chiko_idle.gif`,
+    health: `50`,
+    attacks:`tackle`
+},
+
+{
+
+    name: `Cyndaquil`,
+    image_url: `/cyndaquil.gif`,
+    health: `50`,
+    attacks:`tackle` 
+},
+
+{
+
+    name: `Totadile`,
+    image_url: `/totadile.gif`,
+    health: `50`,
+    attacks:`tackle`
+}
+]
+
+let pokemon_selection_Json = JSON.stringify(pokemon_selection);
+Cookies.set(`user_selection`, pokemon_selection_Json);
