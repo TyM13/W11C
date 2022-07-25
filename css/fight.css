@@ -8,6 +8,7 @@ body {
     place-items: center;
     min-height: 100vh;
     width: 100%;
+    grid-template-columns: 1fr 1fr;
 }
 
 img {
@@ -16,8 +17,8 @@ img {
 
 
 .pokemon_imgs {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
 }
 
 section{
@@ -29,3 +30,8 @@ body {
     background-image: url(/pkmbg.jpg);
     background-size: cover;
 }
+
+/* .win_lose{
+    text-align: center;
+    position:relative; left:-12px;
+} */
